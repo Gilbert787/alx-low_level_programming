@@ -8,12 +8,12 @@
  * Return: largest number
  */
 
+int a;
+int b;
+int c;
+
 int largest_number(void)
 {
-
-	int a;
-	int b;
-	int c;
 
 	int largest;
 
