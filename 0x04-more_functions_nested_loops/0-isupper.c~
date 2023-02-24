@@ -3,7 +3,7 @@
 /**
 * _isupper - shows is a char is uppercase
 *
-* @c: int value
+* @c - int value
 *
 * Return: @c value
 */
