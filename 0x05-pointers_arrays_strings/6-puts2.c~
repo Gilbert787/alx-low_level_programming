@@ -1,0 +1,25 @@
+#include "main.h"
+#include <string.h>
+
+/**
+* puts2 - Prints out every other charecter in a string
+*
+* @str: string
+*
+* Return: No return
+*/
+
+void puts2(char *str)
+{
+	int i;
+	int length = strlen(str);
+
+	for (i = 0; i < length; i += 2)
+	{
+
+		int temp = str[i];
+	}
+
+	_putchar ('\n');
+
+}
