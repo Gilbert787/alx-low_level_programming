@@ -1,0 +1,27 @@
+#include "main.h"
+#include <string.h>
+
+/**
+* _strcmp - Compares 2 strings
+*
+* @s1: string
+*
+* @s2: string
+*
+* Return: return int value
+*/
+
+int _strcmp(char *s1, char *s2)
+{
+	strcmp(s1, s2);
+
+	if (s1 == s2)
+		return (0);
+
+	elseif(s1 < s2)
+		return (-1);
+
+	else
+		return (1);
+
+}
