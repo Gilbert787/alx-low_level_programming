@@ -1,0 +1,20 @@
+#include "main.h"
+#include <string.h>
+
+/**
+* _memset - copies char b to the first n elements
+*
+* @s: string
+*
+* @b: Char
+*
+* @n: int value
+*
+* Return: return the string
+*/
+
+char *_memset(char *s, char b, unsigned int n)
+{
+	memset(s, b, n);
+	return (s);
+}
