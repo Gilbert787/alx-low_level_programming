@@ -56,7 +56,7 @@ int main(int argc, char *argv[])
 				printf("Error\n");
 				return (1);
 			}
- 
+
 			value = atoi(argv[i]);
 			sum = sum + value;
 
