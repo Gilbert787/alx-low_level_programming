@@ -1,0 +1,54 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/**
+* main - prints out the name of the first argument
+*
+* @argc: argument count int value
+*
+* @argv: argument vector array of strings
+*
+* Return: return 0 success
+*/
+
+int main(int argc, char *argv[])
+{
+	int coins[] = {25, 10, 5, 2, 1};
+	int value;
+	int change;
+	int div;
+	int position;
+
+	position = change = div = value = 0;
+
+	if (argc != 2)
+	{
+		printf("Error\n");
+		return (1);
+
+	}
+
+	value = atoi(argv[1]);
+
+	if (value <= 0)
+	{	printf("0\n");
+		return (0);
+	}
+
+	while (coins[position] != '\n')
+	{
+		if (value >= coins[position])
+		{
+			div = (value / coins[position]);
+			change += div;
+			value -= coins[position] * div;
+		}
+
+		position++;
+
+	}
+
+	printf("%d\n", change);
+	return (0);
+
+}
